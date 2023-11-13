@@ -7,11 +7,11 @@ toggle.addEventListener('click', () => {
     const styleElement = document.head.appendChild(document.createElement("style"));
     if(body.classList.contains('dark')) {
         styleElement.innerHTML = ".clock::before {background-image: url('Image/darkClock.jpg');}";
-        toggle.innerText = 'dark'
+        toggle.innerText = 'light'
     }
     else {
         styleElement.innerHTML = ".clock::before {background-image: url('Image/lightClock.jpg');}";
-        toggle.innerText = 'light'
+        toggle.innerText = 'dark'
     }
 })
 
